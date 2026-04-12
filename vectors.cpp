@@ -8,19 +8,37 @@
 //     cout << vec[0];
 //     return 0;
 // }
-#include<iostream>
-#include<vector>
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int main()
+// {
+
+//     vector<char> vec = {'a', 'b', 'c'};
+//     cout << vec[0] << endl;
+//     for (char val : vec)
+//     {
+//         cout << val << endl;
+//     }
+
+//     return 0;
+// }
+//functionsforvector
+#include <iostream>
+#include <vector>
 using namespace std;
 
-int main(){
+int main(int argc, char const *argv[])
+{
+    vector<char> vec = {'x','y','z'};
 
-    vector <char> vec = {'a','b','c'};
-    cout << vec[0] <<endl;
-    for ( char val : vec){
-        cout << val << endl;
+    cout <<"Size = "<< vec.size()<<endl;
+
+    for(char val : vec){
+        cout << val <<endl;
     }
 
-
     return 0;
-
 }
+
