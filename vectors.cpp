@@ -41,13 +41,13 @@
 
 //     return 0;
 // }
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    // vector<int> vec(4) ; 
+    // vector<int> vec(4) ;
     // // cout << vec[0] <<"\n";
     // // cout << vec[1];
     // // cout << vec[2];
@@ -55,13 +55,34 @@ int main(int argc, char const *argv[])
     // for (int i : vec){
     //     cout << i << endl;
     // }
-    vector<char> vec = {'a','s','d'};
-    cout << "Size : " <<vec.size()<<endl;
-    for (char val : vec){
-        cout << val <<endl;
-    }
+    // vector<char> vec = {'a', 's', 'd'};
+
+    // cout << "Size : " << vec.size() << endl;
+    
+    // for (char val : vec)
+    // {
+    //     cout << val << endl;
+    // }
+
+    vector<int> vec ;
+    cout << "Size = "<<vec.size()<< endl;
+    vec.push_back(25);
+    vec.push_back(35);
+    vec.push_back(45);
+    cout << "Size after pushback() = "<<vec.size()<< endl;
+
+    vec.pop_back(); //45 by default pop hoga;
+
+    cout << "Size after popback() = "<<vec.size()<< endl;
+    
+    // for (int val : vec){
+    //     cout << val <<endl;
+    // }
+    cout<<vec.front() << endl;
+
+    cout<<vec.back() << endl;
+
+    cout << vec.at(1)<<endl;
+
     return 0;
 }
-
-
-
